@@ -9694,3 +9694,25 @@ h4, h5, h6 {
   padding: 0;
   list-style-type: none;
 }
+
+/* === Custom fun glow hover === */
+.service-item {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: transparent !important;
+}
+
+.service-item:hover {
+    transform: translateY(-6px);
+    background-color: transparent !important;
+}
+
+.service-item i {
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 2px rgba(0, 123, 255, 0.3));
+}
+
+.service-item:hover i {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 8px rgba(0, 123, 255, 0.8));
+}
+
