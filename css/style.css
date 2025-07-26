@@ -9617,11 +9617,11 @@ h4, h5, h6 {
 .title::after {
   position: absolute;
   content: "";
-  width: 60px;
-  height: 2px;
+  width: 100px;  /* הארך את הקו */
+  height: 3px;   /* גם אפשר להגדיל את הגובה */
   bottom: 0;
   left: 0;
-  background: #78CC6D;
+  background: linear-gradient(90deg, #78CC6D, transparent);
 }
 
 .progress {
